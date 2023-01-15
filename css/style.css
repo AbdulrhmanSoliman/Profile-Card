@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+--background-color: hsl(185, 75%, 39%);
+--text-color-bold: hsl(229, 23%, 23%);
+--text-color-gray: hsl(227, 10%, 46%);
+--text-color-very-gray:hsl(0, 0%, 59%);
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: var(--background-color);
+}
+.background::before{
+    content: '';
+    position: absolute;
+    background-image: url('../images/bg-pattern-top.svg');
+    top: -75%;
+    width: 101%;
+    height: 146%;
+    left: -55%;
+    background-repeat: no-repeat;
+    background-size: 978px 978px;
+    background-position: right center;
+    z-index: -1;
+}
+.background::after{
+    content: '';
+    position: absolute;
+    background-image: url('../images/bg-pattern-bottom.svg');
+    width: 53%;
+    height: 50%;
+    background-size: 950px 978px;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+.one{
+    border-radius: 14px 14px 0 0;
+}
+.text{
+    margin: 24px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    text-align: center;
+    column-gap: 50px;
+    row-gap: 5px;
+}
+.two{
+    margin-top: -15%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.num{
+    color: var(--text-color-very-gray);
+    font-weight: 400;
+    margin-left: 7px;
+}
+h1{
+    font-size: 18px;
+    margin: 20px 0 10px 0;
+    font-weight: 700;
+    color: var(--text-color-bold);
+}
+p{
+    color: var(--text-color-very-gray);
+}
+hr{
+    background: hsla(0, 0%, 59%, 30%);
+    width: 100%;
+    margin-top: 24px;
+    height: 1px;
+    border: 0;
+}
+.num2{
+    font-weight: 700;
+    font-size: 18px;
+    color:var(--text-color-bold);
+}
+.text2{
+    font-size: 10px;
+    color:var(--text-color-very-gray);
+    letter-spacing: 1.5px;
+}
+.attribution{
+    position: absolute;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 15px;
+    bottom: 5px;
+    color: white;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:var(--text-color-bold) ;
+}
